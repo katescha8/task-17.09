@@ -62,6 +62,43 @@ namespace Home2
             //double процент4 = Math.Round((студент4.Объём_выпитого * 100) / всего_алкоголя, 1);
             //double процент5 = Math.Round((студент5.Объём_выпитого * 100) / всего_алкоголя, 1);
             //Console.WriteLine($"Всего алкоголя выпито {всего_алкоголя} литров, из них {процент1}% выпил(а) {студент1.Имя},  из них {процент2}% выпил(а) {студент2.Имя}, из них {процент3}% выпил(а) {студент3.Имя}, из них {процент4}% выпил(а) {студент4.Имя}, из них {процент5}% выпил(а) {студент5.Имя}");
+            //Console.WriteLine("Задание 2");
+            //Console.WriteLine("sbyte-(127)-(-128)");
+            //Console.WriteLine("byte-(255)-(0)");
+            //Console.WriteLine("short-(32 767)-(-32 768)");
+            //Console.WriteLine("ushort-(65 535)-(0)");
+            //Console.WriteLine("int-(2 147 483 647)-(-2 147 483 648)");
+            //Console.WriteLine("uint-(4 294 967 295)-(0");
+            //Console.WriteLine("long-(9 223 372 036 854 775 807)-(-9 223 372 036 854 775 808)");
+            //Console.WriteLine("ulong-(18 446 744 073 709 551 615)-(0)");
+            //Console.WriteLine("char-(65 535)-(0)");
+            //Console.WriteLine("float-(3,4 x 10^38)-(1,5 x 10^−45)");
+            //Console.WriteLine("double-(1.7 x 10^308)-(5 x 10^-324)");
+            //Console.WriteLine("decimal-(7,9228 x 10^28)-(1,0 x 10^-28)");
+            //Console.WriteLine("bool-(True=1)-(False=0)");
+            //Console.WriteLine("string-(Строка символов Unicode)");
+            //Console.WriteLine("object-(Прародитель всех встроенных и пользовательских типов)");
+            //Console.WriteLine("Задание 3");
+            //User user1 = new User();
+            //Console.Write("Введите своё имя ");
+            //user1.name = Console.ReadLine();
+            //Console.Write("Введите свой город ");
+            //user1.city = Console.ReadLine();
+            //Console.Write("Введите свой возраст ");
+            //user1.age = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Введите свой PIN-код ");
+            //user1.pin_code = Convert.ToUInt32(Console.ReadLine());
+            //Console.WriteLine($"Информация о пользователе {user1.name}: город {user1.city}, возраст {user1.age} лет, PIN-код {user1.pin_code}");
+            //Console.WriteLine("Задание 4");
+            //Console.Write("Введите имя ");
+            //string s1 = Console.ReadLine();
+            //int index = s1.IndexOf(' ');
+            //string s3 = s1.Remove(index);
+            //string s2 = s1.Remove(0, index + 1);
+            //string s4 = s2.Remove(1);
+            //string s5 = s3.Remove(1);
+            //Console.WriteLine(s5 + "."+ s4 + ".");
+
         }
     }
     struct Студент
@@ -79,5 +116,13 @@ namespace Home2
         b, //студент-любитель выпить, но не алкоголик
         c, //студент пьет по праздникам
         d  //студент не пьет
+    }
+    struct User
+    {
+        public string name;
+        public string city;
+        public int age;
+        public uint pin_code;
+
     }
 }
