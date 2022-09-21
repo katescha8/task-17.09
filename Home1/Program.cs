@@ -63,18 +63,18 @@ namespace Home2
             //double процент5 = Math.Round((студент5.Объём_выпитого * 100) / всего_алкоголя, 1);
             //Console.WriteLine($"Всего алкоголя выпито {всего_алкоголя} литров, из них {процент1}% выпил(а) {студент1.Имя},  из них {процент2}% выпил(а) {студент2.Имя}, из них {процент3}% выпил(а) {студент3.Имя}, из них {процент4}% выпил(а) {студент4.Имя}, из них {процент5}% выпил(а) {студент5.Имя}");
             //Console.WriteLine("Задание 2");
-            //Console.WriteLine("sbyte-(127)-(-128)");
-            //Console.WriteLine("byte-(255)-(0)");
-            //Console.WriteLine("short-(32 767)-(-32 768)");
-            //Console.WriteLine("ushort-(65 535)-(0)");
-            //Console.WriteLine("int-(2 147 483 647)-(-2 147 483 648)");
-            //Console.WriteLine("uint-(4 294 967 295)-(0");
-            //Console.WriteLine("long-(9 223 372 036 854 775 807)-(-9 223 372 036 854 775 808)");
-            //Console.WriteLine("ulong-(18 446 744 073 709 551 615)-(0)");
-            //Console.WriteLine("char-(65 535)-(0)");
-            //Console.WriteLine("float-(3,4 x 10^38)-(1,5 x 10^−45)");
-            //Console.WriteLine("double-(1.7 x 10^308)-(5 x 10^-324)");
-            //Console.WriteLine("decimal-(7,9228 x 10^28)-(1,0 x 10^-28)");
+            //Console.WriteLine($"sbyte-({SByte.MaxValue})-({SByte.MinValue})");
+            //Console.WriteLine($"byte-({Byte.MaxValue})-({Byte.MinValue})");
+            //Console.WriteLine($"short-({short.MaxValue})-({short.MinValue})");
+            //Console.WriteLine($"ushort-({ushort.MaxValue})-({ushort.MinValue})");
+            //Console.WriteLine($"int-({Int32.MaxValue})-({Int32.MinValue})");
+            //Console.WriteLine($"uint-({UInt32.MaxValue})-({UInt32.MinValue})");
+            //Console.WriteLine($"long-({long.MaxValue})-({long.MinValue})");
+            //Console.WriteLine($"ulong-({ulong.MaxValue})-({ulong.MinValue})");
+            //Console.WriteLine($"char-({char.MaxValue})-({char.MinValue})");
+            //Console.WriteLine($"float-({float.MaxValue})-({float.MinValue})");
+            //Console.WriteLine($"double-({Double.MaxValue})-({Double.MinValue})");
+            //Console.WriteLine($"decimal-({Decimal.MaxValue})-({Decimal.MinValue})");
             //Console.WriteLine("bool-(True=1)-(False=0)");
             //Console.WriteLine("string-(Строка символов Unicode)");
             //Console.WriteLine("object-(Прародитель всех встроенных и пользовательских типов)");
@@ -98,7 +98,39 @@ namespace Home2
             //string s4 = s2.Remove(1);
             //string s5 = s3.Remove(1);
             //Console.WriteLine(s5 + "."+ s4 + ".");
-
+            //Console.WriteLine("Задание 5");
+            //Console.Write("Введите стандартную цену виски ");
+            //int normPrice = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Введите скидку в DutyFree в процентах ");
+            //int salePrice = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Введите стоимость отпуска ");
+            //int holidayPrice = Convert.ToInt32(Console.ReadLine());
+            //double sale = salePrice * normPrice * 0.01;
+            //double amount1 = holidayPrice / sale;
+            //double amount2 = Math.Floor(amount1);
+            //Console.WriteLine("Вы должны купить " + amount2 + " бутылок");
+            //Console.WriteLine("Задание 6");
+            //Console.Write("Введите скорость в км/ч ");
+            //double speed_km_p_h = Convert.ToDouble(Console.ReadLine());
+            //double speed_sm_p_s = Math.Floor(speed_km_p_h / 0.036);
+            //Console.WriteLine(speed_km_p_h + " -> " + speed_sm_p_s);
+            //Console.WriteLine("Задание 7");
+            //Console.Write("Введите строку ");
+            //string s1 = Console.ReadLine();
+            //char[] char1 = s1.ToCharArray();
+            //for (int i = 0; i < char1.Length; i++)
+            //{
+            //    if (char.IsLower(char1[i]))
+            //    {
+            //        char1[i] = Char.ToUpper(char1[i]);
+            //    }
+            //    else
+            //    {
+            //        char1[i] = Char.ToLower(char1[i]);
+            //    }
+            //}
+            //for (int i = 0; i < char1.Length; i++)
+            //{ Console.Write(char1[i]); }
         }
     }
     struct Студент
